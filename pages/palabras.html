@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/palabras.css" />
+    <title>Juego del Ahorcado</title>
+  </head>
+  <body class="body">
+    <header>
+      <div class="container-header">
+        <div class="logo">
+          <a href="/"> Juego del Ahorcado</a>
+        </div>
+        <nav class="menu">
+          <a href="https://www.linkedin.com/in/fernandodiaz62/" target="_blank">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/fernydiaz62/" target="_blank">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/Metaldev-06" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="container-form">
+        <form action="palabras.html" class="form">
+          <textarea
+            class="input"
+            name="agregarPalabra"
+            id="agregarPalabra"
+            placeholder="Ingrese una palabra"
+            maxlength="8"
+          ></textarea>
+          <p>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            Máx. de 8 letras
+          </p>
+          <div class="btn-container">
+            <button type="submit" class="btn">Guardar</button>
+            <a href="/" class="btn">Cancelar</a>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <a href="#"> Metaldev_06 </a> | Challenge Oracle Next Education |
+        2022
+      </p>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/e0cf88fc96.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

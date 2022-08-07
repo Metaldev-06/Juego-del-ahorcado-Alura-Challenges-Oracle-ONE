@@ -8,14 +8,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
+.body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    height: 100vh;
 }
-
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -27,12 +25,10 @@ body {
 		background-position: 0% 50%;
 	}
 }
-
 a {
     text-decoration: none;
     color: var(--white)
 }
-
 /*? HEADER  */
 
 header {
@@ -50,6 +46,10 @@ header {
 .logo {
     font-size: 30px;
     font-weight: bold;
+    transition: all .3s;
+}
+.logo:hover {
+    transform: scale(1.1);
 }
 .menu {
     display: flex;
@@ -99,6 +99,7 @@ header {
     z-index: 0;
     border-radius: 12px;
     transition: all .3s;
+    text-align: center;
 } 
 .btn::after {
     content: "";

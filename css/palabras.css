@@ -1,0 +1,47 @@
+:root {
+    --dark: #1C1E1F;
+    --white: #DBD8E3;
+    --secondary: #585F63;
+}
+.body {
+    color: var(--white);
+}
+.container-form {
+    width: 60%;
+    height: 60vh;
+    padding: 50px;
+    background-color: var(--secondary);
+    border-radius: 8px;
+    box-shadow: 0 0 30px 1px rgba(80, 80, 80, 0.613);
+}
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input {
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    background-color: var(--secondary);
+    border: 0;
+    border-radius: 8px;
+    padding: 10px;
+    resize: none;
+    color: var(--white);
+    outline:none;
+}
+.input::placeholder {
+    color: var(--white);
+}
+.input:active {
+    border: 0;
+}
+
+.btn-container {
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+}

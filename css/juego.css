@@ -1,0 +1,41 @@
+:root {
+    --dark: #1C1E1F;
+    --white: #DBD8E3;
+    --secondary: #585F63;
+}
+
+#body {
+    background-color: var(--secondary);
+    font-family: 'Roboto', sans-serif;
+    color: var(--white);
+}
+.container-content {
+    width: 80%;
+    height: 80vh;
+}
+.container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.draw {
+    width: 1000px;
+    height: 450px;
+    background-color: aliceblue;
+}
+
+.letters {
+    text-align: center;
+}
+
+.container-buttons {
+    width: 50%;
+    display: flex;
+    gap: 30px;
+}
+.container-buttons button{
+    width: 100%;
+}
