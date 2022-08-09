@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/juego.css" />
     <title>Juego del Ahorcado</title>
   </head>
-  <body id="body">
+  <body id="body" class="body">
     <header>
       <div class="container-header">
         <div class="logo">
@@ -36,17 +36,27 @@
 
     <main class="container">
       <section class="container-content">
-        <article class="draw"></article>
+        <canvas class="draw" id="draw" width="500" height="450"> </canvas>
 
         <article class="letters">
-          <p id="letrasCorrectas">SALADO</p>
-          <p id="letrasIncorrectas">JHP</p>
+          <p id="letrasCorrectas" class="letrasCorrectas"></p>
+          <p id="letrasIncorrectas" class="letrasIncorrectas"></p>
         </article>
 
         <article class="container-buttons">
-          <button class="btn">Nuevo juego</button>
-          <button class="btn">Desistir</button>
+          <button class="btn" id="nuevoJuego">Nuevo juego</button>
+          <button href="/" class="btn" id="desistir">Desistir</button>
         </article>
+        <span class="finJuego" id="alertCorrect">
+          <p>✅</p>
+          <p>Has ganado</p>
+          <p>Felicitaciones!!!</p>
+        </span>
+        <span class="finJuego" id="alertIncorrect">
+          <p>🔴</p>
+          <p>Has perdido</p>
+          <p>Vuelve a intentarlo</p>
+        </span>
       </section>
     </main>
 
@@ -61,6 +71,7 @@
       src="https://kit.fontawesome.com/e0cf88fc96.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/main.js"></script>
+    <script src="../js/palabras.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

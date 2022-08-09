@@ -4,8 +4,8 @@
     --secondary: #585F63;
 }
 
-#body {
-    background-color: var(--secondary);
+.body {
+    /* background-color: var(--secondary); */
     font-family: 'Roboto', sans-serif;
     color: var(--white);
 }
@@ -22,13 +22,36 @@
 }
 
 .draw {
-    width: 1000px;
-    height: 450px;
+    position: relative;
     background-color: aliceblue;
+    border-radius: 8px;
+    z-index: 10;
+}
+
+.finJuego {
+    width: 500px;
+    height: 450px;
+    position: absolute;
+    background-color: aliceblue;
+    border-radius: 8px;
+    z-index: 9999;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: var(--dark)
 }
 
 .letters {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hidden {
+    color: transparent;
 }
 
 .container-buttons {
@@ -39,3 +62,22 @@
 .container-buttons button{
     width: 100%;
 }
+
+.letrasCorrectas {
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    user-select: none;
+}
+.letrasIncorrectas {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.letter {
+    border-bottom: 3px solid black;
+    width: 50px;
+    text-align: center;
+}
+
