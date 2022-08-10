@@ -87,7 +87,6 @@ const drawWord = () => {
     letterElement.classList.add("letter");
     letterElement.classList.add("hidden");
     letrasCorrectas.appendChild(letterElement);
-    console.log(letterElement);
   });
 };
 
@@ -98,7 +97,6 @@ const selectRandomWord = () => {
       Math.floor(Math.random() * palabrasLocal.length)
     ].toUpperCase();
   palabraSeleccionada = word.split("");
-  console.clear();
 };
 
 const drawHangMan = () => {
