@@ -92,8 +92,11 @@ const drawWord = () => {
 };
 
 const selectRandomWord = () => {
+  let palabrasLocal = JSON.parse(localStorage.getItem("palabras"));
   let word =
-    palabras[Math.floor(Math.random() * palabras.length)].toUpperCase();
+    palabrasLocal[
+      Math.floor(Math.random() * palabrasLocal.length)
+    ].toUpperCase();
   palabraSeleccionada = word.split("");
   console.clear();
 };
