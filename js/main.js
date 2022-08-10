@@ -1,5 +1,6 @@
 const letrasCorrectas = document.getElementById("letrasCorrectas");
 const btnNuevoJuego = document.getElementById("nuevoJuego");
+const btnDesistir = document.getElementById("desistir");
 const letrasIncorrectas = document.getElementById("letrasIncorrectas");
 const alertCorrect = document.getElementById("alertCorrect");
 const alertIncorrect = document.getElementById("alertIncorrect");
@@ -124,4 +125,7 @@ const startGame = () => {
 };
 
 btnNuevoJuego.addEventListener("click", startGame);
+btnDesistir.addEventListener("click", () => {
+  location.href = "../index.html";
+});
 window.addEventListener("load", () => startGame());
