@@ -175,3 +175,20 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+/* Media queries */
+
+@media (max-width: 416px) {
+    .container-header {
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+}

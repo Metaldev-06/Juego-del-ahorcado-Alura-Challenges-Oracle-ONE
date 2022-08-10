@@ -9,15 +9,15 @@ let canvas = document.getElementById("draw");
 let pincel = canvas.getContext("2d");
 
 const partes = [
-  [150, 50, 5, 350], //poste
-  [150, 50, 150, 5], //base superior
-  [300, 50, 5, 50], //Soga
-  [278, 100, 50, 50], //cabeza
-  [300, 150, 5, 100], //Torso
-  [250, 180, 50, 5], //Brazo izquierdo
-  [305, 180, 50, 5], //Brazo derecho
-  [250, 245, 50, 5], //Pierna izquierda
-  [305, 245, 50, 5], //Pierna Derecha
+  [100, 50, 5, 350], //poste
+  [100, 50, 150, 5], //base superior
+  [250, 50, 5, 50], //Soga
+  [228, 100, 50, 50], //cabeza
+  [250, 150, 5, 100], //Torso
+  [200, 180, 50, 5], //Brazo izquierdo
+  [250, 180, 50, 5], //Brazo derecho
+  [200, 245, 50, 5], //Pierna izquierda
+  [250, 245, 50, 5], //Pierna Derecha
 ];
 
 let palabraSeleccionada;
@@ -101,10 +101,10 @@ const selectRandomWord = () => {
 };
 
 const drawHangMan = () => {
-  pincel.canvas.width = 500;
+  pincel.canvas.width = 300;
   pincel.canvas.height = 450;
   pincel.clearRect(0, 0, canvas.width, canvas.height);
-  pincel.fillRect(150, 400, 250, 5); //base
+  pincel.fillRect(27, 400, 250, 5); //base
 };
 
 const startGame = () => {

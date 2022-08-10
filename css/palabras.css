@@ -45,3 +45,8 @@
    justify-content: center;
    gap: 30px;
 }
+@media (max-width: 600px) {
+    .container-form {
+        width: 90%;
+    }
+}

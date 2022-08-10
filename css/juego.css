@@ -18,7 +18,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
 }
 
 .draw {
@@ -29,7 +28,7 @@
 }
 
 .finJuego {
-    width: 500px;
+    width: 300px;
     height: 450px;
     position: absolute;
     background-color: aliceblue;
@@ -57,6 +56,7 @@
 .container-buttons {
     width: 50%;
     display: flex;
+    justify-content: center;
     gap: 30px;
 }
 .container-buttons button{
@@ -81,3 +81,22 @@
     text-align: center;
 }
 
+
+/* Media Queries */
+@media (max-width: 500px) {
+    .letrasCorrectas {
+        gap: 10px;
+        font-size: 16px;
+    }
+    .letter {
+        border-bottom: 3px solid black;
+        width: 40px;
+        text-align: center;
+    }
+    .container-buttons {
+        width: 100% !important;
+    }
+    .container-buttons button{
+        width: 100%;
+    }
+}
