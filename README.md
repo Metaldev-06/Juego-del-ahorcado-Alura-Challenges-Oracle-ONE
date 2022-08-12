@@ -9,7 +9,7 @@
     Insignia de finalización
 </h2>
 <div align="center">
-    <img src="https://cdn.discordapp.com/attachments/963137601152364554/1005561025308930188/cms_files_10224_1659462746Badge_Sharer_Alura_ChallengeOracleONE_2000x2000_V3.png" width="500">
+    <img src="https://cdn.discordapp.com/attachments/963137601152364554/1007706610820448327/cms_files_10224_1659461490Badge_JS_Alura_ChallengeOracleONE_2000x2000_V3.png" width="500">
 </div>
 
 <h2>
