@@ -92,12 +92,18 @@ const drawWord = () => {
 };
 
 const selectRandomWord = () => {
-  let palabrasLocal = JSON.parse(localStorage.getItem("palabras"));
-  let word =
-    palabrasLocal[
-      Math.floor(Math.random() * palabrasLocal.length)
-    ].toUpperCase();
-  palabraSeleccionada = word.split("");
+  palabrasLocal = JSON.parse(localStorage.getItem("palabras"));
+  if (palabrasLocal?.length >= 1) {
+    let word =
+      palabrasLocal[
+        Math.floor(Math.random() * palabrasLocal.length)
+      ].toUpperCase();
+    palabraSeleccionada = word.split("");
+  } else {
+    let word =
+      palabras[Math.floor(Math.random() * palabras.length)].toUpperCase();
+    palabraSeleccionada = word.split("");
+  }
 };
 
 const drawHangMan = () => {
