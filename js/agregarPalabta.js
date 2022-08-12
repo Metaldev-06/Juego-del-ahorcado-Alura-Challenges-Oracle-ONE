@@ -1,6 +1,6 @@
 btnAgregar.addEventListener("click", (e) => {
   e.preventDefault();
-  palabras.push(input.value);
+  palabras.push(input.value.toUpperCase());
 
   localStorage.setItem("palabras", JSON.stringify(palabras));
 
