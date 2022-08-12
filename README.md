@@ -62,7 +62,7 @@
 <br><br>
 <p>
     Aqui tienes el 
-    <a href="https://metaldev-06.github.io/Encriptador-de-texto-Alura-Challenges-Oracle-ONE/">
+    <a href="https://metaldev-06.github.io/Juego-del-ahorcado-Alura-Challenges-Oracle-ONE/">
         link del proyecto finalizado
     </a>
     para que lo puedas ver
